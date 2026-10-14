@@ -53,5 +53,5 @@ npm run lint       # 코드 검사
 
 - 문의 양식은 아직 서버와 연결되지 않았습니다 (Formspree, 자체 API 등 연결 필요).
 - 공지·주문·자료실·영문 링크는 기존 사이트(bl-tech.co.kr)로 연결됩니다. 기존 사이트를 내리면 링크를 바꿔야 합니다.
-- **Vercel**: 저장소 연결 시 자동 인식, SPA 라우팅은 `vercel.json`.
+- **Vercel (사용 중)**: GitHub `haranee-create/bltech-deploy1` 의 `main` 에 올리면 https://bltech-deploy1.vercel.app/ 에 자동 배포. 빌드 설정(Vite, 결과 폴더 `dist`)과 SPA 라우팅은 `vercel.json`.
 - **Netlify**: Build `npm run build`, Publish `dist`, SPA 라우팅은 `public/_redirects`.
