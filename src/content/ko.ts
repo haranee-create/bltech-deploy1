@@ -248,7 +248,8 @@ export const ko: Content = {
   productsHeading: {
     label: 'Products',
     title: '대표 제품',
-    description: '국내외 정형외과 시장에서 알려진 대표 브랜드 NEAL과 BEODERM 하이드로겔을 소개합니다.',
+    description:
+      '일본 시장 점유율 1위를 기록한 정형외과 캐스트·스플린트 브랜드 NEAL, FDA 리스팅과 CE MDR을 획득한 의료용 하이드로겔 BEODERM. 특허받은 고분자 기술로 개발해 36개국 이상의 의료 현장에 공급합니다.',
     cta: '전체 제품 보기',
   },
   productCategories: { all: '전체', ortho: '정형외과', derma: '더마 케어', industrial: '산업용 보수재' },

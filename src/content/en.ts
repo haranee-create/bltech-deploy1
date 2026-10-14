@@ -270,7 +270,8 @@ export const en: Content = {
   productsHeading: {
     label: 'Products',
     title: 'Featured Products',
-    description: 'Meet NEAL, our flagship orthopedic brand known at home and abroad, and BEODERM hydrogel.',
+    description:
+      'NEAL, the orthopedic cast and splint brand with the No. 1 market share in Japan, and BEODERM, a medical hydrogel with FDA listing and CE MDR. Built on our patented polymer technology and supplied to clinics in more than 36 countries.',
     cta: 'All products',
   },
   productCategories: { all: 'All', ortho: 'Orthopedics', derma: 'Derma Care', industrial: 'Industrial Repair' },
