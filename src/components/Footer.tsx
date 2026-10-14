@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router'
 import { useContent } from '../content'
 import { useLocalizePath } from '../i18n/locale'
@@ -41,6 +41,13 @@ export function Footer() {
   const to = useLocalizePath()
   const logoRef = useRef<HTMLAnchorElement>(null)
   const logoIn = useInView(logoRef, { rootMargin: '0px 0px -5% 0px' })
+  // 하단 대형 로고가 보이는 동안 헤더 로고를 숨겨 로고가 두 번 겹쳐 보이지 않게 합니다.
+  const brandVisible = useInView(logoRef, { once: false, rootMargin: '0px' })
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('footer-brand-visible', brandVisible)
+    return () => document.documentElement.classList.remove('footer-brand-visible')
+  }, [brandVisible])
 
   return (
     <footer className="site-footer">
