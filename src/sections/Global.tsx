@@ -23,7 +23,7 @@ export function Global() {
       </div>
       {/* keys re-measure the marquees when the language changes */}
       <div className="global-dark__rows" key={global.countries.join()}>
-        <Marquee speed={40} pauseOnHover>
+        <Marquee speed={30} pauseOnHover>
           {global.countries.map((name) => (
             <span className="global__item" key={name}>
               {name}
@@ -31,7 +31,7 @@ export function Global() {
             </span>
           ))}
         </Marquee>
-        <Marquee speed={40} reverse pauseOnHover>
+        <Marquee speed={24} reverse pauseOnHover>
           {global.brands.map((name) => (
             <span className="global__item global__item--outline" key={name}>
               {name}

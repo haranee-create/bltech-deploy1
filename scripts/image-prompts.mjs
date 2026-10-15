@@ -21,7 +21,7 @@ export const IMAGES = [
     size: '1536x1024',
     prompt:
       'Extreme macro photograph of white fiberglass knit orthopedic casting tape, showing the woven mesh texture and a thin ' +
-      'glossy resin coating, cool ice-blue and deep navy rim light only (no green), shallow depth of field. Abstract material study.',
+      'glossy resin coating, soft blue and green rim light, shallow depth of field. Abstract material study.',
   },
   {
     file: 'bltech/ai-hydrogel-macro.webp',
