@@ -18,7 +18,7 @@ function BusinessCard({ item, index, number, to, cursor }: { item: Business; ind
       to={to}
       viewTransition
       id={item.slug}
-      className="xcard"
+      className={`xcard xcard--${item.tone}`}
       style={{ '--i': index } as CSSProperties}
       data-cursor={cursor}
     >

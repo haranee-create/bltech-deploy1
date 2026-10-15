@@ -384,12 +384,27 @@
   min-height: var(--card-h);
   margin: 0 var(--margin);
   padding: 22px clamp(18px, 2vw, 32px) 26px;
-  /* one calm surface for every card — the photograph carries the colour */
+  /* white that drifts into a faint CI tint toward the lower left — one tint per business line */
+  --tint: #e9eff8;
   border: 1px solid rgb(16 24 40 / 0.06);
   border-radius: var(--radius-lg);
-  background: var(--c-white);
+  background:
+    radial-gradient(110% 90% at 0% 100%, var(--tint) 0%, transparent 72%),
+    linear-gradient(200deg, var(--c-white) 40%, color-mix(in srgb, var(--tint) 45%, var(--c-white)) 100%);
   color: var(--c-ink);
   box-shadow: 0 -14px 36px rgb(16 24 40 / 0.06);
+}
+
+.xcard--blue {
+  --tint: #dde7f6;
+}
+
+.xcard--green {
+  --tint: #ddefe5;
+}
+
+.xcard--slate {
+  --tint: #e0e5ee;
 }
 
 .xcard__main,

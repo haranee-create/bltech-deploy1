@@ -16,17 +16,18 @@ export const noticeUrl = (id: number) => `${LEGACY}/sub4_1/${id}`
 
 export const SHOWCASE_IMAGE = `${IMG}/ai-polymer-macro.webp`
 
-// ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) — 색은 모두 같은 흰 카드, 사진이 색을 담당 ──
+// ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) ──
+// tone: 흰 카드에 은은하게 번지는 CI 계열 색 (정형외과 블루 · 하이드로겔 그린 · 산업용 슬레이트)
 export const businessBase = [
-  { slug: 'casting', image: `${IMG}/product-cast.webp` },
-  { slug: 'splint', image: `${IMG}/product-splint.webp` },
-  { slug: 'compression', image: `${IMG}/neal-cover.webp` },
-  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp` },
-  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp` },
-  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp` },
-  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp` },
-  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp` },
-  { slug: 'plant', image: `${IMG}/plant-line.webp` },
+  { slug: 'casting', image: `${IMG}/product-cast.webp`, tone: 'blue' },
+  { slug: 'splint', image: `${IMG}/product-splint.webp`, tone: 'blue' },
+  { slug: 'compression', image: `${IMG}/neal-cover.webp`, tone: 'blue' },
+  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, tone: 'green' },
+  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, tone: 'green' },
+  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, tone: 'green' },
+  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp`, tone: 'slate' },
+  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp`, tone: 'slate' },
+  { slug: 'plant', image: `${IMG}/plant-line.webp`, tone: 'slate' },
 ] as const
 
 export type BusinessSlug = (typeof businessBase)[number]['slug']
