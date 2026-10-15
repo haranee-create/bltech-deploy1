@@ -225,14 +225,18 @@ export const en: Content = {
 
   hero: {
     eyebrow: ['Biomedical Polymer', 'Since 2006'],
-    srTitle: 'Polymer science for a better life — BL Tech',
-    lines: [
-      [{ type: 'word', text: 'Polymer' }, { type: 'word', text: 'Science' }, { type: 'pill' }],
-      [{ type: 'word', text: 'for a' }, { type: 'stack' }, { type: 'plus' }, { type: 'word', text: 'Better', accent: true }],
-      [{ type: 'word', text: 'Life', accent: true }, { type: 'down' }],
+    title: ['Polymer science', 'for a better life'],
+    accentLine: 1,
+    lead: 'Since 2006, we have developed and manufactured orthopedic medical devices, hydrogel products and industrial repair materials with our patented polymer synthesis technology.',
+    primary: 'View products',
+    secondary: 'About us',
+    facts: [
+      { value: '36+', label: 'Countries supplied' },
+      { value: 'ISO 13485', label: 'Medical device QMS' },
+      { value: 'FDA · CE MDR', label: 'US & EU regulatory' },
     ],
-    lead: 'We develop and manufacture orthopedic medical devices, hydrogel products and industrial repair materials with patented polymer synthesis technology.',
-    facts: ['36+ countries', 'ISO 13485', 'FDA · CE MDR'],
+    imageAlt: 'A clinician wrapping an orthopedic bandage around a patient’s forearm',
+    badge: { label: 'Since 2006', text: 'Orthopedic medical device manufacturer' },
   },
 
   showcase: {

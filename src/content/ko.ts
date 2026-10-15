@@ -203,14 +203,18 @@ export const ko: Content = {
 
   hero: {
     eyebrow: ['Biomedical Polymer', 'Since 2006'],
-    srTitle: '폴리머 기술로 더 나은 삶을 만듭니다 — 비엘테크',
-    lines: [
-      [{ type: 'word', text: '폴리머' }, { type: 'word', text: '기술로' }, { type: 'pill' }],
-      [{ type: 'word', text: '더' }, { type: 'word', text: '나은' }, { type: 'stack' }, { type: 'plus' }, { type: 'word', text: '삶을', accent: true }],
-      [{ type: 'word', text: '만듭니다' }, { type: 'down' }],
+    title: ['폴리머 기술로', '더 나은 삶을', '만듭니다'],
+    accentLine: 1,
+    lead: '2006년부터 특허받은 고분자 합성 기술로 정형외과용 의료기기와 하이드로겔, 산업용 보수재를 개발하고 제조해 왔습니다.',
+    primary: '제품 보기',
+    secondary: '회사소개',
+    facts: [
+      { value: '36+', label: '수출 국가' },
+      { value: 'ISO 13485', label: '의료기기 품질경영' },
+      { value: 'FDA · CE MDR', label: '미국·유럽 인증·등록' },
     ],
-    lead: '특허 받은 폴리머 합성 기술로 정형외과용 의료기기, 하이드로겔, 산업용 보수재를 개발하고 제조합니다.',
-    facts: ['36개국 이상 공급', 'ISO 13485', 'FDA · CE MDR'],
+    imageAlt: '의료진이 환자의 팔에 정형외과용 붕대를 감고 있는 모습',
+    badge: { label: 'Since 2006', text: '정형외과 의료기기 전문 제조' },
   },
 
   showcase: {

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { prefersReducedMotion } from './smooth'
 
-const SELECTOR = '[data-magnetic], .circle, .pill-link__icon, .hero-plus'
+const SELECTOR = '[data-magnetic], .circle, .pill-link__icon'
 const STRENGTH = 0.3
 
 /**

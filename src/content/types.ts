@@ -8,13 +8,18 @@ export type Place = { name: string; role: string; address: string; mapUrl: strin
 export type Stat = { value?: number; prefix?: string; suffix?: string; text?: string; label: string }
 export type Heading = { label: string; title: string; description?: string }
 
-/** One piece of a hero headline line: a masked word or one of the inline media/controls. */
-export type HeroToken =
-  | { type: 'word'; text: string; accent?: boolean }
-  | { type: 'pill' }
-  | { type: 'stack' }
-  | { type: 'plus' }
-  | { type: 'down' }
+export type Hero = {
+  eyebrow: [string, string]
+  /** Headline, one entry per line; `accentLine` is drawn in BL BLUE. */
+  title: string[]
+  accentLine: number
+  lead: string
+  primary: string
+  secondary: string
+  facts: { value: string; label: string }[]
+  imageAlt: string
+  badge: { label: string; text: string }
+}
 
 export type BusinessText = { group: string; title: string; description: string; items: string[] }
 export type Business = BusinessText & { slug: BusinessSlug; image: string; bg: string; fg: string }
@@ -87,7 +92,7 @@ export type Content = {
     cursor: { view: string; read: string; contact: string; open: string; products: string; map: string }
   }
 
-  hero: { eyebrow: [string, string]; srTitle: string; lines: HeroToken[][]; lead: string; facts: string[] }
+  hero: Hero
   showcase: { eyebrow: string; title: string; meta: string[]; imageAlt: string }
   intro: { label: string; lead: string; body: string[]; cta: string }
   stats: Stat[]

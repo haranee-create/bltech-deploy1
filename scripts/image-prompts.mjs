@@ -8,6 +8,15 @@ export const STYLE =
 
 export const IMAGES = [
   {
+    file: 'bltech/ai-hero-clinical.webp',
+    size: '1024x1536',
+    prompt:
+      'Premium editorial photograph for a medical-device company: a clinician in a crisp white coat and pale blue nitrile gloves ' +
+      'gently wrapping a clean white orthopedic casting bandage around a patient forearm resting on a light grey surface. ' +
+      'Soft diffused daylight from a large window, airy white and pale blue-grey tones, generous negative space at the top, ' +
+      'shallow depth of field, calm, precise and reassuring. Faces out of frame.',
+  },
+  {
     file: 'bltech/ai-polymer-macro.webp',
     size: '1536x1024',
     prompt:
