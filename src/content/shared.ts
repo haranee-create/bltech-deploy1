@@ -17,18 +17,18 @@ export const noticeUrl = (id: number) => `${LEGACY}/sub4_1/${id}`
 export const SHOWCASE_IMAGE = `${IMG}/ai-polymer-macro.webp`
 
 // ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) ──
-// tint: 카드 위쪽에서 흰색으로 번지는 색. 묶음마다 한 계열(정형외과 블루 · 하이드로겔 그린 · 산업용 슬레이트),
-//       카드마다 그 계열 안의 다른 색 — 블루: 스카이·페리윙클·콘플라워 / 그린: 민트·아쿠아·세이지 / 슬레이트: 라이트·스틸·라벤더
+// tint: 카드 위쪽에서 흰색으로 번지는 색. 모두 BL BLUE 계열 — 묶음마다 결이 조금씩 다르고
+//       (정형외과 블루 · 하이드로겔 애저 · 산업용 슬레이트 블루), 쌓이는 순서대로 한 단계씩 깊어집니다.
 export const businessBase = [
-  { slug: 'casting', image: `${IMG}/product-cast.webp`, tint: '#c4def7' },
-  { slug: 'splint', image: `${IMG}/product-splint.webp`, tint: '#cbcdf4' },
-  { slug: 'compression', image: `${IMG}/neal-cover.webp`, tint: '#aec6ea' },
-  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, tint: '#c3ead6' },
-  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, tint: '#bfe3e3' },
-  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, tint: '#d2e7bd' },
-  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp`, tint: '#d3dbe7' },
-  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp`, tint: '#c3d3da' },
-  { slug: 'plant', image: `${IMG}/plant-line.webp`, tint: '#cfcde2' },
+  { slug: 'casting', image: `${IMG}/product-cast.webp`, tint: '#d6e4f7' },
+  { slug: 'splint', image: `${IMG}/product-splint.webp`, tint: '#c8d7f1' },
+  { slug: 'compression', image: `${IMG}/neal-cover.webp`, tint: '#bccbeb' },
+  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, tint: '#d3e3f3' },
+  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, tint: '#c5d8ee' },
+  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, tint: '#b7cae8' },
+  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp`, tint: '#d8e0ee' },
+  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp`, tint: '#cad5ea' },
+  { slug: 'plant', image: `${IMG}/plant-line.webp`, tint: '#bcc7e4' },
 ] as const
 
 export type BusinessSlug = (typeof businessBase)[number]['slug']

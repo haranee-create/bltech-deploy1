@@ -33,7 +33,7 @@
 .hero__glow span:nth-child(1) {
   left: -14%;
   top: -18%;
-  background: radial-gradient(circle, rgb(156 198 63 / 0.22), transparent 62%);
+  background: radial-gradient(circle, rgb(143 178 230 / 0.26), transparent 62%);
 }
 
 .hero__glow span:nth-child(2) {
@@ -167,6 +167,23 @@
   clip-path: inset(100% 0 0 0 round var(--radius-lg));
 }
 
+/* soft depth at the foot of the photo, under the badge */
+.hero__visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgb(13 23 51 / 0.2));
+  pointer-events: none;
+}
+
+/* scroll parallax: the photo trails the page slightly (--pass from useScrollProgress) */
+.hero__parallax {
+  position: absolute;
+  inset: -7% 0;
+  transform: translate3d(0, calc((var(--pass, 0.5) - 0.5) * 14%), 0);
+  will-change: transform;
+}
+
 .hero__visual img {
   position: absolute;
   inset: 0;
@@ -181,8 +198,43 @@
   animation: hero-unveil 1.3s var(--ease-in-out) 0.2s both;
 }
 
+/* zoom settles, then a very slow breathing drift takes over */
 .hero.is-in .hero__visual img {
-  animation: settle 2.4s var(--ease-out) 0.2s both;
+  animation:
+    settle 2.4s var(--ease-out) 0.2s both,
+    hero-drift 24s ease-in-out 2.6s infinite alternate;
+}
+
+@keyframes hero-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07) translate3d(-1.2%, -1%, 0);
+  }
+}
+
+/* one diagonal sweep of light once the photo is in */
+.hero__sheen {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(105deg, transparent 30%, rgb(255 255 255 / 0.32) 48%, rgb(255 255 255 / 0.08) 56%, transparent 70%);
+  transform: translateX(-110%);
+  pointer-events: none;
+}
+
+.hero.is-in .hero__sheen {
+  animation: hero-sheen 1.9s var(--ease-in-out) 1.35s both;
+}
+
+@keyframes hero-sheen {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110%);
+  }
 }
 
 @keyframes hero-unveil {
@@ -196,6 +248,7 @@
 
 .hero__badge {
   position: absolute;
+  z-index: 2;
   left: clamp(14px, 1.6vw, 24px);
   bottom: clamp(14px, 1.6vw, 24px);
   display: flex;
@@ -214,7 +267,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--c-green-deep);
+  color: var(--c-navy);
 }
 
 .hero__badge-text {
@@ -663,12 +716,12 @@
   width: 0.14em;
   height: 0.14em;
   border-radius: 50%;
-  background: var(--c-lime);
+  background: var(--c-sky);
 }
 
 @media (hover: hover) {
   .global__item:hover {
-    color: var(--c-lime);
+    color: var(--c-sky);
   }
 
   .global__item--outline:hover {
@@ -716,7 +769,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--c-green);
+  background: var(--c-blue);
 }
 
 .ccard__title {

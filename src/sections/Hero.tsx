@@ -1,17 +1,22 @@
-import type { CSSProperties } from 'react'
+import { useRef, type CSSProperties } from 'react'
 import { PillLink } from '../components/Buttons'
 import { useContent } from '../content'
 import { cx } from '../lib/cx'
 import { useReady } from '../lib/hooks'
+import { useScrollProgress, type ScrollProgress } from '../lib/scroll'
 
 const d = (seconds: number) => ({ '--d': `${seconds}s` }) as CSSProperties
 
 const HERO_IMAGE = '/images/bltech/ai-hero-clinical.webp'
 
+const setPass = ({ pass }: ScrollProgress, el: HTMLElement) => el.style.setProperty('--pass', pass.toFixed(4))
+
 /** 첫 화면 — 왼쪽에 제목·설명·버튼, 오른쪽에 큰 임상 사진, 아래에 인증 정보 한 줄. */
 export function Hero() {
   const { hero, locale } = useContent()
   const ready = useReady()
+  const visualRef = useRef<HTMLElement>(null)
+  useScrollProgress(visualRef, setPass)
 
   return (
     <section className={cx('hero', `hero--${locale}`, ready && 'is-in')}>
@@ -50,8 +55,12 @@ export function Hero() {
         </div>
       </div>
 
-      <figure className="hero__visual">
-        <img src={HERO_IMAGE} alt={hero.imageAlt} width={1024} height={1536} fetchPriority="high" decoding="async" />
+      {/* 사진: 아래에서 열리며 줌이 풀리고 → 빛이 한 번 스치고 → 아주 느리게 숨 쉬듯 움직이며, 스크롤에는 살짝 늦게 따라옵니다. */}
+      <figure className="hero__visual" ref={visualRef}>
+        <span className="hero__parallax">
+          <img src={HERO_IMAGE} alt={hero.imageAlt} width={1024} height={1536} fetchPriority="high" decoding="async" />
+        </span>
+        <span className="hero__sheen" aria-hidden="true" />
         <figcaption className="hero__badge hero-fade" style={d(1.05)}>
           <span className="hero__badge-label">{hero.badge.label}</span>
           <span className="hero__badge-text">{hero.badge.text}</span>

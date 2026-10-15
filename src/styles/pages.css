@@ -130,7 +130,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.16em;
-  color: var(--c-lime);
+  color: var(--c-sky);
 }
 
 .vision__text {
@@ -176,7 +176,7 @@
   font-size: 12px;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
-  color: var(--c-green);
+  color: var(--c-blue);
 }
 
 .mission__en {
@@ -217,7 +217,7 @@
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(90deg, var(--c-green), var(--c-blue) 60%, var(--c-navy));
+  background: linear-gradient(90deg, var(--c-blue), var(--c-blue) 60%, var(--c-navy));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -325,7 +325,7 @@
   height: 7px;
   margin-left: 10px;
   border-radius: 50%;
-  background: var(--c-green);
+  background: var(--c-blue);
   vertical-align: middle;
 }
 
@@ -372,7 +372,7 @@
 
 .org__node--dept {
   min-width: 0;
-  background: var(--c-mint);
+  background: var(--c-ice);
   color: #0b4a2a;
 }
 
@@ -427,11 +427,11 @@
 .location__map {
   font-size: 13px;
   font-weight: 600;
-  color: var(--c-green);
+  color: var(--c-blue);
 }
 
 .location:hover .location__map {
-  color: var(--c-lime);
+  color: var(--c-sky);
 }
 
 .locations__contact {
@@ -464,7 +464,7 @@
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--c-green);
+  color: var(--c-blue);
 }
 
 .tech__lead {
@@ -641,7 +641,7 @@
   gap: 20px;
   padding: clamp(28px, 3.4vw, 56px);
   border-radius: var(--radius-lg);
-  background: radial-gradient(120% 120% at 0% 0%, #0f9a4c 0%, var(--c-green-deep) 45%, #0b5e30 100%);
+  background: radial-gradient(120% 120% at 0% 0%, #3a64bf 0%, var(--c-navy) 45%, #172b66 100%);
   color: var(--c-white);
 }
 
@@ -954,7 +954,7 @@
   gap: 12px;
   padding: clamp(28px, 3vw, 48px);
   border-radius: var(--radius-lg);
-  background: var(--c-mint);
+  background: var(--c-ice);
   line-height: 1.7;
 }
 
@@ -986,7 +986,7 @@
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 0.85;
-  background: linear-gradient(90deg, var(--c-green), var(--c-blue) 55%, var(--c-navy));
+  background: linear-gradient(90deg, var(--c-blue), var(--c-blue) 55%, var(--c-navy));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

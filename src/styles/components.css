@@ -23,17 +23,17 @@
 }
 
 .preloader__mark {
-  width: 52px;
+  width: 40px;
   height: auto;
   animation: mark-breathe 1.2s ease-in-out infinite alternate;
 }
 
 @keyframes mark-breathe {
   from {
-    transform: scale(0.92) rotate(-6deg);
+    opacity: 0.55;
   }
   to {
-    transform: none;
+    opacity: 1;
   }
 }
 
@@ -51,7 +51,7 @@
   bottom: 0;
   height: 2px;
   width: var(--p);
-  background: linear-gradient(90deg, var(--c-lime), var(--c-blue), var(--c-navy));
+  background: var(--c-navy);
   transition: width 0.2s linear;
 }
 
@@ -360,7 +360,7 @@ button.circle:disabled {
   }
 
   .pill-link--dark:hover .pill-link__icon {
-    background: var(--c-green-deep);
+    background: var(--c-navy);
   }
 }
 
