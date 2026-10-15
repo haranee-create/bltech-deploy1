@@ -4,7 +4,7 @@
 
 export const STYLE =
   'Clean, trustworthy medical-technology editorial imagery. Natural light, crisp detail, calm composition, ' +
-  'colour palette of deep navy, clear blue and soft ice-blue tones only. No logos, no brand names, no readable text.'
+  'colour palette leaning on deep navy, clear blue and fresh green accents. No logos, no brand names, no readable text.'
 
 export const IMAGES = [
   {
@@ -41,7 +41,7 @@ export const IMAGES = [
     file: 'bltech/ai-global-export.webp',
     size: '1536x1024',
     prompt:
-      'Stylized minimal world map made of fine dots on a deep navy background, glowing soft-blue and pale ice-blue light arcs (no green) radiating from ' +
+      'Stylized minimal world map made of fine dots on a deep navy background, glowing blue and green light arcs radiating from ' +
       'South Korea to many countries across the Americas, Europe, Asia and Oceania. Elegant data-visualization look, no text.',
   },
   {

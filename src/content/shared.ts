@@ -17,15 +17,15 @@ export const noticeUrl = (id: number) => `${LEGACY}/sub4_1/${id}`
 export const SHOWCASE_IMAGE = `${IMG}/ai-polymer-macro.webp`
 
 // ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) ──
-// tint: 카드 위쪽에서 흰색으로 번지는 색. 모두 BL BLUE 계열 — 묶음마다 결이 조금씩 다르고
-//       (정형외과 블루 · 하이드로겔 애저 · 산업용 슬레이트 블루), 쌓이는 순서대로 한 단계씩 깊어집니다.
+// tint: 카드 위쪽에서 흰색으로 번지는 색 — 로고 색을 따라 묶음마다 블루 → 그린 → 네이비.
+//       정형외과 블루 · 하이드로겔 아쿠아·민트·라임(로고 심볼의 초록) · 산업용 네이비 슬레이트, 쌓일수록 한 단계씩.
 export const businessBase = [
   { slug: 'casting', image: `${IMG}/product-cast.webp`, tint: '#d6e4f7' },
   { slug: 'splint', image: `${IMG}/product-splint.webp`, tint: '#c8d7f1' },
   { slug: 'compression', image: `${IMG}/neal-cover.webp`, tint: '#bccbeb' },
-  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, tint: '#d3e3f3' },
-  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, tint: '#c5d8ee' },
-  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, tint: '#b7cae8' },
+  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, tint: '#cfe9e4' },
+  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, tint: '#c8e7d3' },
+  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, tint: '#d9ecc6' },
   { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp`, tint: '#d8e0ee' },
   { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp`, tint: '#cad5ea' },
   { slug: 'plant', image: `${IMG}/plant-line.webp`, tint: '#bcc7e4' },

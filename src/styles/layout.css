@@ -256,7 +256,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: var(--c-sky);
+  color: var(--c-lime);
 }
 
 .mobile-menu.is-open .mobile-menu__links a {

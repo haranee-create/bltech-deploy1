@@ -7,13 +7,15 @@
   --c-line: #dde2ea;
   --c-skeleton: #e6e9ee;
 
-  /* One blue family across the site, built on BL BLUE. BL GREEN (#009244) appears only inside the
-     official logo itself, so the logo stays the single point of green. */
+  /* BL tech CI colours (bl-tech.co.kr CI page). Navy/blue carry the page; the logo's green and
+     lime return as small accents so the whole site echoes the symbol's gradient. */
   --c-navy: #243f8e; /* BL BLUE · PANTONE 7687C */
   --c-deep: #0d1733; /* darkest navy for dark sections */
+  --c-green: #009244; /* BL GREEN · PANTONE 347C */
+  --c-green-deep: #00843d; /* a touch deeper for white text (WCAG AA) */
   --c-blue: #1470c0; /* symbol gradient blue */
-  --c-sky: #8fb2e6; /* light blue accent on dark surfaces */
-  --c-ice: #e6edf8; /* pale blue surface */
+  --c-lime: #9cc63f; /* symbol gradient green */
+  --c-mint: #d3ebdd;
 
   /* SUIT: soft, open Korean/Latin sans (OFL) — self-hosted from @sun-typeface/suit */
   --font-sans: 'SUIT Variable', SUIT, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic',

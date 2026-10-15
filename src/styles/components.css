@@ -51,7 +51,7 @@
   bottom: 0;
   height: 2px;
   width: var(--p);
-  background: var(--c-navy);
+  background: linear-gradient(90deg, var(--c-lime), var(--c-green), var(--c-blue), var(--c-navy));
   transition: width 0.2s linear;
 }
 
@@ -360,7 +360,7 @@ button.circle:disabled {
   }
 
   .pill-link--dark:hover .pill-link__icon {
-    background: var(--c-navy);
+    background: var(--c-green-deep);
   }
 }
 

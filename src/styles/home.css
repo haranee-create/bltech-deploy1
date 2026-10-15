@@ -33,7 +33,7 @@
 .hero__glow span:nth-child(1) {
   left: -14%;
   top: -18%;
-  background: radial-gradient(circle, rgb(143 178 230 / 0.26), transparent 62%);
+  background: radial-gradient(circle, rgb(156 198 63 / 0.22), transparent 62%);
 }
 
 .hero__glow span:nth-child(2) {
@@ -267,7 +267,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--c-navy);
+  color: var(--c-green-deep);
 }
 
 .hero__badge-text {
@@ -750,7 +750,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: rgb(143 178 230 / 0.7);
+  background: var(--c-lime);
 }
 
 .global__item--outline .global__dot {
@@ -760,7 +760,7 @@
 
 @media (hover: hover) {
   .global__item:hover {
-    color: var(--c-sky);
+    color: var(--c-lime);
   }
 
   .global__item--outline:hover {
@@ -808,7 +808,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--c-blue);
+  background: var(--c-green);
 }
 
 .ccard__title {
