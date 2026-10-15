@@ -166,7 +166,7 @@
   padding: 0 11px;
   border-radius: 999px;
   font-size: 11.5px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.06em;
   color: var(--c-muted);
   transition:
@@ -245,8 +245,8 @@
   gap: 14px;
   padding: 10px 0;
   font-size: clamp(38px, 10.5vw, 68px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.15;
   transform: translateY(110%);
   transition: transform 0.8s var(--ease-in-out);
@@ -344,8 +344,8 @@
 
 .cta-card__title {
   font-size: clamp(20px, 1.7vw, 28px);
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.3;
 }
 
@@ -357,8 +357,8 @@
 
 .cta-card__big {
   font-size: clamp(52px, 6vw, 108px);
-  font-weight: 700;
-  letter-spacing: -0.055em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   line-height: 1.05;
   transition: transform 0.8s var(--ease-out);
 }
@@ -394,7 +394,7 @@
 .footer-card h3 {
   margin-bottom: 22px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--c-muted);
@@ -426,7 +426,7 @@
 }
 
 .footer-card__place strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .footer-card__place:hover span,
@@ -476,8 +476,8 @@
 .footer-brand__slogan {
   max-width: 11em;
   font-size: clamp(20px, 2.6vw, 44px);
-  font-weight: 700;
-  letter-spacing: -0.04em;
+  font-weight: 600;
+  letter-spacing: -0.025em;
   line-height: 1.12;
   text-align: right;
   background: linear-gradient(90deg, var(--c-green), var(--c-blue) 55%, var(--c-navy));

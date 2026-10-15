@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css'
-import '@fontsource-variable/archivo/wdth.css'
+import '@sun-typeface/suit/fonts/variable/woff2/SUIT-Variable.css'
 import 'lenis/dist/lenis.css'
 import './styles/base.css'
 import './styles/components.css'

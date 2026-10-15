@@ -165,8 +165,8 @@
 
 .section-heading__title {
   font-size: var(--fs-h2);
-  font-weight: 700;
-  letter-spacing: -0.045em;
+  font-weight: 600;
+  letter-spacing: -0.03em;
   line-height: 1.12;
 }
 
@@ -571,9 +571,9 @@ button.circle:disabled {
 
 .stats-row__value {
   font-size: clamp(42px, 5vw, 88px);
-  font-weight: 700;
+  font-weight: 600;
   font-variant-numeric: tabular-nums;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.03em;
   line-height: 1;
   color: var(--c-navy);
 }
@@ -584,7 +584,7 @@ button.circle:disabled {
   align-items: flex-end;
   height: clamp(42px, 5vw, 88px); /* same box height as the numbers */
   font-size: clamp(24px, 2.4vw, 42px);
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
   white-space: nowrap;
 }
 

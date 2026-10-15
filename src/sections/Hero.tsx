@@ -23,7 +23,9 @@ export function Hero() {
 
       <div className="hero__copy">
         <p className="hero__eyebrow hero-fade" style={d(0.1)}>
-          {hero.eyebrow[0]} <span aria-hidden="true">—</span> {hero.eyebrow[1]}
+          <span>
+            {hero.eyebrow[0]} <span className="hero__eyebrow-dash" aria-hidden="true">—</span> {hero.eyebrow[1]}
+          </span>
         </p>
 
         <h1 className="hero__title">

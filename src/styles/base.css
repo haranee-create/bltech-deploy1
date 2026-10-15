@@ -16,9 +16,9 @@
   --c-lime: #9cc63f; /* symbol gradient green */
   --c-mint: #d3ebdd;
 
-  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo',
-    'Malgun Gothic', sans-serif;
-  --font-wide: 'Archivo Variable', 'Archivo', 'Arial Black', sans-serif;
+  /* SUIT: soft, open Korean/Latin sans (OFL) — self-hosted from @sun-typeface/suit */
+  --font-sans: 'SUIT Variable', SUIT, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Malgun Gothic',
+    sans-serif;
 
   --margin: clamp(18px, 2.2vw, 40px);
   --gap: clamp(12px, 1.2vw, 20px);
@@ -125,8 +125,8 @@ fieldset {
 h1,
 h2,
 h3 {
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 600;
+  letter-spacing: -0.02em;
   line-height: 1.12;
 }
 
