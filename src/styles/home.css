@@ -384,10 +384,12 @@
   min-height: var(--card-h);
   margin: 0 var(--margin);
   padding: 22px clamp(18px, 2vw, 32px) 26px;
+  /* one calm surface for every card — the photograph carries the colour */
+  border: 1px solid rgb(16 24 40 / 0.06);
   border-radius: var(--radius-lg);
-  background: var(--bg);
-  color: var(--fg);
-  box-shadow: 0 -10px 30px rgb(16 24 40 / 0.05);
+  background: var(--c-white);
+  color: var(--c-ink);
+  box-shadow: 0 -14px 36px rgb(16 24 40 / 0.06);
 }
 
 .xcard__main,
@@ -408,10 +410,11 @@
 .xcard__index {
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.06em;
+  color: var(--c-navy);
 }
 
 .xcard__group {
-  opacity: 0.6;
+  color: var(--c-muted);
 }
 
 .xcard__title {
@@ -426,7 +429,8 @@
   max-width: 24em;
   font-size: clamp(15px, 1.15vw, 18px);
   line-height: 1.65;
-  opacity: 0.85;
+  color: var(--c-muted);
+  word-break: keep-all;
 }
 
 .xcard__meta {
@@ -438,6 +442,10 @@
   align-self: flex-start;
 }
 
+.xcard__arrow.circle--dark {
+  background: var(--c-navy);
+}
+
 .xcard__list {
   font-size: 13.5px;
   font-weight: 500;
@@ -445,7 +453,8 @@
 
 .xcard__list li {
   padding: 9px 0;
-  border-top: 1px solid color-mix(in srgb, currentcolor 16%, transparent);
+  border-top: 1px solid var(--c-line);
+  color: #3d4350;
 }
 
 .xcard__media {

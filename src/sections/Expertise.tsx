@@ -13,14 +13,13 @@ function chunk<T>(list: T[], size: number) {
 }
 
 function BusinessCard({ item, index, number, to, cursor }: { item: Business; index: number; number: number; to: string; cursor: string }) {
-  const dark = item.fg !== '#1e1e1e'
   return (
     <Link
       to={to}
       viewTransition
       id={item.slug}
       className="xcard"
-      style={{ '--bg': item.bg, '--fg': item.fg, '--i': index } as CSSProperties}
+      style={{ '--i': index } as CSSProperties}
       data-cursor={cursor}
     >
       <div className="xcard__main">
@@ -32,7 +31,7 @@ function BusinessCard({ item, index, number, to, cursor }: { item: Business; ind
         <p className="xcard__desc">{item.description}</p>
       </div>
       <div className="xcard__meta">
-        <CircleIcon variant={dark ? 'light' : 'dark'} className="xcard__arrow" />
+        <CircleIcon variant="dark" className="xcard__arrow" />
         <ul className="xcard__list">
           {item.items.map((line) => (
             <li key={line}>{line}</li>

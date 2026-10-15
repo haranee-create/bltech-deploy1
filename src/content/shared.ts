@@ -8,13 +8,6 @@ export const LEGACY = 'http://www.bl-tech.co.kr'
 // BL tech CI: BL BLUE #243f8e, BL GREEN #009244 (흰 글씨가 올라가는 면은 대비를 위해 #00843d)
 export const palette = {
   navy: '#243f8e',
-  ink: '#0d1733',
-  green: '#00843d',
-  ice: '#e8eef7',
-  mist: '#eef6f1',
-  mint: '#d3ebdd',
-  cloud: '#f0f2f5',
-  steel: '#e2e8f0',
 }
 
 export const naverMap = (query: string) => `https://map.naver.com/p/search/${encodeURIComponent(query)}`
@@ -23,17 +16,17 @@ export const noticeUrl = (id: number) => `${LEGACY}/sub4_1/${id}`
 
 export const SHOWCASE_IMAGE = `${IMG}/ai-polymer-macro.webp`
 
-// ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) ──────────────
+// ── 사업분야 카드 (3장씩 쌓이는 순서 그대로) — 색은 모두 같은 흰 카드, 사진이 색을 담당 ──
 export const businessBase = [
-  { slug: 'casting', image: `${IMG}/product-cast.webp`, bg: WHITE, fg: INK },
-  { slug: 'splint', image: `${IMG}/product-splint.webp`, bg: palette.ice, fg: INK },
-  { slug: 'compression', image: `${IMG}/neal-cover.webp`, bg: palette.navy, fg: WHITE },
-  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp`, bg: palette.mist, fg: INK },
-  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp`, bg: palette.mint, fg: INK },
-  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp`, bg: palette.green, fg: WHITE },
-  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp`, bg: palette.cloud, fg: INK },
-  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp`, bg: palette.steel, fg: INK },
-  { slug: 'plant', image: `${IMG}/plant-line.webp`, bg: palette.ink, fg: WHITE },
+  { slug: 'casting', image: `${IMG}/product-cast.webp` },
+  { slug: 'splint', image: `${IMG}/product-splint.webp` },
+  { slug: 'compression', image: `${IMG}/neal-cover.webp` },
+  { slug: 'skin-protector', image: `${IMG}/beoderm-hydrogel.webp` },
+  { slug: 'hydrogel-patch', image: `${IMG}/product-hydrogel.webp` },
+  { slug: 'oem-odm', image: `${IMG}/ai-oem-line.webp` },
+  { slug: 'repair', image: `${IMG}/ai-pipe-wrap.webp` },
+  { slug: 'protection', image: `${IMG}/ai-anti-corrosion.webp` },
+  { slug: 'plant', image: `${IMG}/plant-line.webp` },
 ] as const
 
 export type BusinessSlug = (typeof businessBase)[number]['slug']
