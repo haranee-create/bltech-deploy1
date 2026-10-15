@@ -18,8 +18,8 @@ function BusinessCard({ item, index, number, to, cursor }: { item: Business; ind
       to={to}
       viewTransition
       id={item.slug}
-      className={`xcard xcard--${item.tone}`}
-      style={{ '--i': index } as CSSProperties}
+      className="xcard"
+      style={{ '--i': index, '--tint': item.tint } as CSSProperties}
       data-cursor={cursor}
     >
       <div className="xcard__main">

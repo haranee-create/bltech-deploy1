@@ -22,7 +22,7 @@ export type Hero = {
 }
 
 export type BusinessText = { group: string; title: string; description: string; items: string[] }
-export type Business = BusinessText & { slug: BusinessSlug; image: string; tone: 'blue' | 'green' | 'slate' }
+export type Business = BusinessText & { slug: BusinessSlug; image: string; tint: string }
 
 export type ProductText = { kind: string; tags: string[] }
 export type Product = ProductText & {

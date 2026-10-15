@@ -384,41 +384,17 @@
   min-height: var(--card-h);
   margin: 0 var(--margin);
   padding: 22px clamp(18px, 2vw, 32px) 26px;
-  /* CI tint at the top fading to white below — one tint per business line, and each card in a
-     stack a shade deeper than the one beneath it so the stacked edges stay distinct */
-  --tint: #c7d6ef;
-  --depth: 70%;
-  --top: color-mix(in srgb, var(--tint) var(--depth), var(--c-white));
+  /* each card's own tint (src/content/shared.ts) at the top, fading to white below */
   border: 1px solid rgb(16 24 40 / 0.07);
   border-radius: var(--radius-lg);
   background: linear-gradient(
     180deg,
-    var(--top) 0%,
-    color-mix(in srgb, var(--top) 45%, var(--c-white)) 42%,
+    var(--tint) 0%,
+    color-mix(in srgb, var(--tint) 45%, var(--c-white)) 42%,
     var(--c-white) 100%
   );
   color: var(--c-ink);
   box-shadow: 0 -14px 36px rgb(16 24 40 / 0.08);
-}
-
-.xcard:nth-child(2) {
-  --depth: 85%;
-}
-
-.xcard:nth-child(3) {
-  --depth: 100%;
-}
-
-.xcard--blue {
-  --tint: #c7d6ef;
-}
-
-.xcard--green {
-  --tint: #c4e5d2;
-}
-
-.xcard--slate {
-  --tint: #cfd8e5;
 }
 
 .xcard__main,
